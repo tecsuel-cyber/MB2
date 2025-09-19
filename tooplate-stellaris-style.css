@@ -388,6 +388,46 @@ https://www.tooplate.com/view/2140-stellaris-research
                 opacity: 0.7;
             }
         }
+/* Container em grid para alinhamento perfeito */
+.equipment-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Blocos de serviços */
+.equipment-item {
+  background: #f8f8f8;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 220px; /* controla tamanho máximo do bloco */
+  text-align: center;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.equipment-item:hover {
+  transform: translateY(-5px);
+}
+
+.equipment-item img {
+  width: 100%;
+  aspect-ratio: 4/3; /* mantém proporção uniforme */
+  object-fit: cover; 
+}
+
+.equipment-item span {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #222;
+}
 
         /* Shooting star */
         .shooting-star {
@@ -1278,3 +1318,4 @@ https://www.tooplate.com/view/2140-stellaris-research
 }
 
         }
+
