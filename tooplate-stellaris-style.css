@@ -1238,4 +1238,43 @@ https://www.tooplate.com/view/2140-stellaris-research
             .footer-bottom {
                 font-size: 0.85rem;
             }
+/* Blocos de serviços */
+.equipment-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.equipment-item {
+  background: #f8f8f8; /* mantém seu fundo existente */
+  border-radius: 12px;
+  overflow: hidden;
+  width: 180px; /* largura fixa do bloco */
+  text-align: center;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.equipment-item:hover {
+  transform: translateY(-5px); /* leve efeito de hover */
+}
+
+.equipment-item img {
+  width: 100%;
+  height: 150px; /* altura fixa para proporção uniforme */
+  object-fit: cover; /* mantém proporção e corta excesso */
+}
+
+.equipment-item span {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #222;
+}
+
         }
