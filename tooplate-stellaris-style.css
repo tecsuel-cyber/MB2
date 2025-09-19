@@ -388,7 +388,7 @@ https://www.tooplate.com/view/2140-stellaris-research
                 opacity: 0.7;
             }
         }
-/* Container em grid para alinhamento perfeito */
+/* Grid responsivo */
 .equipment-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -396,19 +396,13 @@ https://www.tooplate.com/view/2140-stellaris-research
   justify-items: center;
 }
 
-/* Blocos de serviços */
+/* Bloco apenas da imagem */
 .equipment-item {
-  background: #f8f8f8;
+  width: 100%;
+  max-width: 220px;
   border-radius: 12px;
   overflow: hidden;
-  width: 100%;
-  max-width: 220px; /* controla tamanho máximo do bloco */
-  text-align: center;
-  padding-bottom: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   transition: transform 0.3s ease;
 }
 
@@ -416,17 +410,28 @@ https://www.tooplate.com/view/2140-stellaris-research
   transform: translateY(-5px);
 }
 
+/* Imagem cobre todo o bloco */
 .equipment-item img {
   width: 100%;
-  aspect-ratio: 4/3; /* mantém proporção uniforme */
-  object-fit: cover; 
+  height: 200px; /* ajuste conforme necessário */
+  object-fit: cover;
+  display: block;
 }
 
-.equipment-item span {
+/* Wrapper para manter imagem + legenda juntos */
+.equipment-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Legenda fora do bloco, abaixo da imagem */
+.equipment-caption {
   margin-top: 8px;
   font-weight: bold;
   font-size: 1rem;
   color: #222;
+  text-align: center;
 }
 
         /* Shooting star */
@@ -1318,4 +1323,5 @@ https://www.tooplate.com/view/2140-stellaris-research
 }
 
         }
+
 
